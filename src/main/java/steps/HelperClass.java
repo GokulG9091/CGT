@@ -5,15 +5,17 @@ import drivers.DriverFactory;
 import drivers.MobileDriver;
 import org.openqa.selenium.WebDriver;
 
+import java.util.Map;
+
 public class HelperClass {
     String platform;
     WebDriver webDriver;
     Driver driverClass;
+    Map<String, String> testDataProperties;
 
-    public HelperClass(String platform) {
+    public HelperClass(String platform, Map<String, String> testDataProperties) {
         this.platform = platform;
-
-
+        this.testDataProperties = testDataProperties;
         if (platform.equalsIgnoreCase("mobileWeb")){
             driverClass = new MobileDriver();
         }else {

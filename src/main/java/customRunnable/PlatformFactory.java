@@ -1,7 +1,7 @@
-package CustomRunnable;
+package customRunnable;
 
 
-import MobileWebStepsImpl.MobileYoutubePageImpl;
+import mobileWebStepsImpl.MobileYoutubePageImpl;
 import WebStepsImpl.WebYoutubePageImpl;
 import steps.HelperClass;
 import steps.YoutubePage;
@@ -14,7 +14,7 @@ public class PlatformFactory {
 
     public PlatformFactory(String platform) {
         this.platform = platform;
-        this.helperClass = new HelperClass(platform);
+        //this.helperClass = new HelperClass(platform);
     }
 
     public String getPlatform() {

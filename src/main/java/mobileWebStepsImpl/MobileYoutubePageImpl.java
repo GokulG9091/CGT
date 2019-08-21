@@ -1,4 +1,4 @@
-package MobileWebStepsImpl;
+package mobileWebStepsImpl;
 
 import steps.HelperClass;
 import steps.YoutubePage;
